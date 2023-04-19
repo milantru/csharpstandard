@@ -159,7 +159,7 @@ The precedence of an operator is established by the definition of its associated
 > |  [§12.14](expressions.md#1214-conditional-logical-operators)             | Conditional OR                   | `\|\|`  |
 > |  [§12.15](expressions.md#1215-the-null-coalescing-operator) and [§12.16](expressions.md#1216-the-throw-expression-operator)             | Null coalescing and throw expression                  | `??`  `throw x`  |
 > |  [§12.18](expressions.md#1218-conditional-operator)             | Conditional                      | `?:`   |
-> |  [§12.21](expressions.md#1219-assignment-operators) and [§12.19](expressions.md#1219-anonymous-function-expressions)  | Assignment and lambda expression | `=` `*=` `/=` `%=` `+=` `-=` `<<=` `>>=` `&=` `^=` `\|=` `=>`   |
+> |  [§12.21](expressions.md#1221-assignment-operators) and [§12.19](expressions.md#1219-anonymous-function-expressions)  | Assignment and lambda expression | `=` `*=` `/=` `%=` `+=` `-=` `<<=` `>>=` `&=` `^=` `\|=` `=>`   |
 >
 > *end note*
 
@@ -3027,7 +3027,7 @@ When *stackalloc_initializer_elements* is present, the *stackalloc_initializer_e
 
 Access via an instance of `System.Span<T>` to the elements of an allocated block is range checked.
 
-Stack allocation initializers are not permitted in `catch` or `finally` blocks ([§12.11](statements.md#1211-the-try-statement)).
+Stack allocation initializers are not permitted in `catch` or `finally` blocks ([§13.11](statements.md#1311-the-try-statement)).
 
 > *Note*: Stack allocation initializers are allowed in `async` methods, but their return value can't be assigned. Neither pointers nor `ref struct` types, like `Span<T>` are allowed in `async` methods. *end note*
 <!-- markdownlint-disable MD028 -->
